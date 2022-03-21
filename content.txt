@@ -1,0 +1,139 @@
+Tusk Coin 
+Earn, Stake, Help 
+Stake Task, to get rewards, be ready to mint Ice Ages NFT for Tusk Coins. Thousands of species of extinct animals in the Tusk Game. Tusk Dimension from Rick&Morty in Tusk Metaverse.
+5% of capital Tusk coins will be granted to WWF (World Wildlife Fund)
+Кнопку надо будет залинковать на pancake swap (после деплоя контракта) 
+
+
+1) ABOUT
+Tusk coin is a BEP-20 token with additional functionality on top of that. You can stake Tusk Coins! 
+We already created a small platform where you can stake Tusk, Wrapped Binance, and Doge coins. By staking these tokens with us, you'll be automatically joined to the Tusk Farm contract and you'll receive a reward by getting more Tusk tokens at the end of each Q(quarter). 
+
+At the end of Q2, we will drop the NFT collection of Ice Age animals. You will be able to mint NFT for Tusk Tokens on the pre-sale stage. And lately, it will be available on OpenSea, Binance NFT, and other platforms. 
+Кнопку надо залинковать на стейкинг аппликуху 
+
+2) BEST FEATURES 
+
+ SAFE&SECURE
+As with any BEP-20 token, it includes providing a secure and trustworthy way for contracting between strangers on the internet to make traditional contracts less expensive and more secure at the same time, using the scope of smart contracts. Since Tusk coin is based on BEP-20, commissions are less, and its DeFi system 
+ 
+
+  EARN BONUS
+   20% of the total supply is on Tusk Farm contact. These tokens will be given as a reward to our holders and people who stake in our application. 
+
+  SEVERAL PROFITS 
+   Tusk token is burnable so 25% of all tokens will be burned. First mass burning at the end of Q1 
+
+
+    LOW COST 
+   We are in the early stage. This is a perfect time to buy our token on some amount. Burning is the process in which users can remove tokens (also called coins) from circulation, which reduces the number of coins in use. The tokens are sent to a wallet address that cannot be used for transactions other than receiving the coins.
+
+    ICE AGES PLAY-TO-YEARN GAME 
+    We started working on the creation of the Ice Ages Play to yearn game. Where you can see untouched nature and thousands of extinct animal species and hunt them down to survive and earn Tusk coins. 
+
+    TUSK DIMENSION METAVERSE
+   We want to create a crazy metaverse of Tusk dimension from Rick and Morty and basically, there will be the same humans, companies but with tusks. You'll be able to spend some time in crazy and funny places and have a chat with others.   
+
+   SAVE OUR PLANET 
+Tusk is one of the most expensive items. But let won't forget how to get the tusk. sadly 3395 species of animals are on the verge of extinction. 5% of all Tusk Capital will be granted to WWF (World Wildlife Fund)
+
+
+
+    ICO Marketing Strategy
+Nowadays we can see that a lot of meme currencies, scum projects, and simple ERC-20 tokens can achieve remarkable success and crazy capitalization with good promotion and marketing. So let's see where a large ecosystem around the Tusk coin can bring us. In the nearest future, there will be the release of the NFT. Afterward, we're going to work on stake2earn implementation and in the nearest future play-to-yearn implementation, and grant 5% of all tokens to WWF. This is a future ecosystem led by a super-team. 
+And by the way, Rick and Morty were here so they bring this logo from the Tusk dimension. Elon Tusk 100% supports us.
+
+ 
+    ECOSYSTEM
+    The ecosystem is really important. Holders of Tusk Coin will earn not only due to the potential growth of the coin but also due to the smart economy of the coin. You can earn more tokens by staking them and the total amount of tokens that will be burned (25% from the total supply) is greater than the total amount of tokens on the staking pool (20% from the total supply). We are also focused on ensuring that our token will be in demand, so we will make exclusive NFT collections that can be minted for tusk coins and later will be featured in the Ice Ages game and the Tusk Metaverse.
+
+    
+
+
+3) Token Sale 
+
+Token symbol: TSK 
+Total amount of tokens: 50,000,000,000
+Token sale starts:  February 23th, 2022                 Purpose: NFT, DeFi, Play-To-Yearn, Metaverse, and help our nature. 
+Acceptable Currency:  BNB, USDT, ETH, BTC, BCH, etc                              
+Total amount for sale: 15,000,000,000
+
+4) Пока додумался до следующего:
+50 млрд
+15- liquidity pool (30%)
+10- на раздачу под видом стейкинга (20%) 
+12,5 - сжигание (25%)
+10 - advertising&team (20%)
+2,5 - to WWF (5%)
+
+
+
+5) ROAD MAP 
+
+    Q1, 2022
+Project design - Y 
+Smart Contract development - Y
+Create official social media accounts (Telegram, Twitter, etc) - Y 
+Open pairs on Pancakeswap - Y
+Launch official website - Y 
+Launch official staking application - Y 
+Begin marketing campaign to build the Tusk community and increase Tusk holders - N 
+7 000 social media members - N
+3,000 holders - N  
+First Mass burning and first rewards - N  
+
+     Q2, 2022
+WhitepapaerV1.1 - N
+TuskCoin Swap Application - N 
+Listing on CoinMarketCap and CoinGecko - N
+Pre-sale stage of NFT collection - N 
+20 000 social media members - N 
+15 000 holders - N 
+Enter the TOP 1000 Coinmarketcap - N
+Website Update - N 
+Roadmap Update - N 
+NFT Collection release - N 
+Second mass burning and rewards for holders - N 
+
+
+    Q3, 2022  
+CEX listings - N 
+Binance listings - N  
+Whitepaper V2 - N 
+Pre-sale of second NFT Collection - N 
+Announcement of Ice Ages play-to-yearn game - N 
+Release of Second NFT Collection - N 
+Mass burning - N 
+
+    Q4, 2022 
+100 000 social media members - N 
+70 000 holders - N 
+Enter the TOP 500 Coinmarketcap - N 
+Ice Ages play-to-yearn game release - N 
+Announcement of Tusk dimension Metaverse - N 
+Mass burning - N 
+
+ 
+ 
+
+6) Вместо Download mobile app делаем How To Buy Tusk Token  
+    1. Install MetaMask or TrustWallet
+    2. Open your Google Chrome or Firefox and visit metamask.io. Download the MetaMask chrome extension and set up a wallet. On mobile? Get MetaMask’s app for iPhone or Android. Purchase BNB, USDT, or any other token 
+    3. Transfer BNB to your MetaMask or TrustWallet. Swap on PancakeSwap
+Visit PancakeSwap and click connect wallet. Copy the Tusk Token Address below.
+Contract Address: ...
+
+
+
+8) News and updates 
+
+    Coming soon. Можно так же самому статью расписать что-то про фичи, но я не грамотный поэтому мб думаю про вымирающий животных сопли развести 
+
+
+FAQ  
+Потом привяжем ссылки на твиттер и тг 
+Email : info@tuskcoin.io 
+
+
+ 
+
