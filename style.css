@@ -57,10 +57,11 @@ p {
 .head-text-style {
     color: #fff;
     font-family: Roboto, sans-serif;
-    font-size: 2.5rem;
-    line-height: 3.75rem;
-    letter-spacing: 0px;
-    font-weight: 700;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    line-height: 5rem;
+    font-weight: 1000;
+    font-style: bold;
     text-transform: uppercase;
 }
 .section-title-style {
@@ -72,7 +73,7 @@ p {
     letter-spacing: 0px;
     text-align: center;
     text-transform: uppercase;
-    padding: 5rem;
+    padding: 3rem;
 }
 .section-about-title-style {
   line-height: 1.5;
@@ -151,20 +152,27 @@ header {
     color: var(--grey-dark);
     text-transform: uppercase;
     text-decoration: none;
+    padding: 0.5rem;
 }
-.header li a :hover {
-    border-bottom: #343a40, 1px, solid;
+.header li a:hover {
+    /* border-bottom: 0.4rem solid var(--indigo); */
+    background-color: var(--purple);
+    color: var(--white);
+    transition: .25s;
+    border-radius: 0.5rem;
+    /* font-size: 1.1rem; */
 }
 
 .hero {
-    background-image: url(img/banner-bg.jpg);
+  background-color: var(--indigo);
+  background-image: url(img/banner-bg.jpg);
 	background-position: 50%, 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
 .hero .container {
-    width: 70%;
+    /* width: 70%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,8 +181,12 @@ header {
 .hero .container .text-container{
     padding-top: 300px;
     padding-bottom: 300px;
-    padding-left: 10rem;
-    max-width: 50%;
+    /* padding-left: 10rem; */
+    /* max-width: 70%; */
+}
+.hero .text-container .paragraph-text-style {
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 .hero .container .svg-container {
     width: 600px;
@@ -195,17 +207,70 @@ header {
     display: inline-block;
     width: 585px;
     height: 607px;
-
 }
-.about-us .text-container {
+.about-us .text-container p {
+  margin-top: 1.5rem;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+.hero .text-container {
     width: 40%;
     padding-top: 60px;
     padding-right: 150px;
 }
-.about-us .text-container p {
-    margin-top: 1.5rem;
-    color: var(--dark);
-    font-size: 1.1rem;
+.hero .button {
+  position: relative;
+
+  padding: 0 2rem;
+  height: 5.6rem;
+  width: 22rem;
+  border: 0;
+  border-radius: 99rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--purple);
+  box-shadow: 0 1rem 2.5rem -1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+
+  overflow: hidden;
+  cursor: pointer;
+}
+.hero .button .ripple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: rgba(248, 69, 159, 0.2);
+
+  opacity: 0;
+  pointer-events: none;
+  transform-origin: 0% 0%;
+
+  animation-timing-function: infinite;
+  animation: rippleAnimation 1.25s;
+}
+@keyframes rippleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate(-50%, -50%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) translate(-50%, -50%);
+  }
 }
 .our-features {
     background-color: var(--purple);
@@ -615,6 +680,18 @@ background-color: #f3f2fc;
       top: 50%;
     }
   }
+  .how-to-buy {
+    background-color: var(--indigo);
+  }
+  .how-to-buy .section-title-style {
+    color: var(--white);
+  }
+  .how-to-buy .paragraph-text-style {
+    color: var(--cyan);
+    text-align: center;
+    font-size: 3rem;
+  }
+
   .footer {
     background-color: var(--gray-dark);
   }
@@ -623,4 +700,15 @@ background-color: #f3f2fc;
     height: 10rem;
     margin: 0 0.5rem 0 3rem;
     padding: 1rem 0;
+  }
+  .how-to-buy ol {
+    /* text-align: center; */
+    padding: 1.5rem;
+  }
+  .how-to-buy ol li {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: bold;
+    padding-bottom: 1rem;
   }

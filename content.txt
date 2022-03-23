@@ -54,7 +54,8 @@ And by the way, Rick and Morty were here so they bring this logo from the Tusk d
 
 Token symbol: TSK 
 Total amount of tokens: 50,000,000,000
-Token sale starts:  February 23th, 2022                 Purpose: NFT, DeFi, Play-To-Yearn, Metaverse, and help our nature. 
+Token sale starts:  February 23th, 2022                 
+Purpose: NFT, DeFi, Play-To-Yearn, Metaverse, and help our nature. 
 Acceptable Currency:  BNB, USDT, ETH, BTC, BCH, etc                              
 Total amount for sale: 15,000,000,000
 
