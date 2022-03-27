@@ -193,31 +193,25 @@ header {
   line-height: 1.4;
 }
 .hero .container .svg-container {
-    width: 600px;
-    height: 514px;
+    width: 500px;
+    height: 614px;
     padding-top: 6.1rem;
 }
-.image-anim.is-animated {
+.image-anim {
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 5000ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 @keyframes move {
   0%{
-    transform: translateY(0px);
-  }
-  25%{
-    transform: translateY(-100px);
+    transform: translateY(-50px);
   }
   50%{
-    transform: translateY(0px);
-  }
-  75%{
-    transform: translateY(100px);
+    transform: translateY(50px);
   }
   100%{
-    transform: translateY(0px);
+    transform: translateY(-50px);
   }
 }
 .about-us {
@@ -350,6 +344,7 @@ background-color: #f3f2fc;
 .token-sale .container ul {
   position: absolute;
   top: 9.2rem;
+  counter-reset: digits 0;
 }
 .token-sale .container li {
   list-style-type: none;
@@ -358,351 +353,125 @@ background-color: #f3f2fc;
   font-style: bold;
   font-weight: 900;
 }
-.token-sale .container li::before {
-  content: counter(orderpunkt);
+.token-sale .container li:before {
+  counter-increment: digits;
+  content: counter(digits);
 	position: absolute;
+  font-size: 1rem;
 	left: -50px;
-	font-size: 0.3rem;
-	font-weight: 300;
-	color: var(--indigo);
+	color: var(--white);
 	background-color: var(--indigo);
-	border-radius: 1rem;
-	padding: 0.8rem;
+	border-radius: 100%;
+	padding: 0.2rem 0.7rem;
 }
 /*
 * ROADMAP CSS
 */
 
-#roadmap-section .paragraph-text-style {
-  padding: 2rem;
+.roadmap-section .section-title-style {
+  color: var(--white);
+}
+.roadmap-section .paragraph-text-style {
+  color: var(--white);
   text-align: center;
-  color: var(--dark);
   font-size: 3rem;
 }
-#roadmap__container {
-    position: relative;
-    margin-bottom: 3rem;
-  }
+.roadmap-section {
+  white-space: nowrap;
+  overflow-x: hidden;
+  background: var(--indigo);
+  padding: 50px 0;
+}
+.roadmap-section .container {
+  width: 70%;
+}
+.roadmap-section .timeline_container {
+  font-size: 0;
+  /* width: 100vw; */
+  padding: 300px 100px;
   
-  #roadmap {
-    padding: 2.5rem;
-    position: relative;
-    margin: 20px auto 0 auto;
-    list-style: none;
-  }
-  
-  #roadmap #endpoint {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    background: #ffd602;
-  }
-  
-  #roadmap::before {
-    content: "";
-    background-color: #252525;
-    height: calc(100% - 20px);
-    position: absolute;
-    left: 50%;
-    top: 20px;
-    transform: translate3D(-50%, 0, 0);
-    z-index: 0;
-    width: 2px;
-  }
-  
-  #roadmap .__year {
-    display: table;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px 25px;
-    border-radius: 50px;
-    width: 50px;
-    position: relative;
-    z-index: 3;
-    background: #fff;
-    border: 1px solid #ffd600;
-    font-size: 1.5em;
-    font-weight: 600;
-  }
-  
-  #roadmap .__item {
-    width: 100%;
-    position: relative;
-  }
-  
-  #roadmap .__item .text {
-    width: 300px;
-    padding: 20px;
-    text-align: left;
-    background: #fff;
-    border-radius: 5px;
-    display: inline-block;
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4),
-      2px 4px 9px 5px rgba(0, 0, 0, 0.09);
-  }
-  
-  #roadmap .__item .text b {
-    display: inline-block;
-    margin-bottom: 10px;
-    font-size: 1.3em;
-    color: #252525;
-  }
-  
-  #roadmap .__item .text span {
-    color: #a7a7a7;
-    font-size: 1.13em;
-  }
-  
-  #roadmap .__item .text hr {
-    margin: 20px 0;
-  }
-  
-  #roadmap .__item .text .__ongoing {
-    display: table;
-    margin-top: 10px;
-    background: rgb(134, 232, 254);
-    clear: both;
-    padding: 8px;
-    color: #252525;
-  }
-  
-  #roadmap .__item.__left {
-    text-align: left;
-    transform: translateZ(0) translateX(-200%);
-    transition: transform 0.6s ease;
-  }
-  
-  #roadmap .__item.__right {
-    text-align: right;
-    transform: translateZ(0) translateX(200%);
-    transition: transform 0.6s ease;
-  }
-  
-  #roadmap .__item.__left .text {
-    border-right: 4px solid #ffd600;
-  }
-  
-  #roadmap .__item.__right .text {
-    border-left: 4px solid #ffd600;
-  }
-  
-  #roadmap .__item.__left .connector,
-  #roadmap .__item.__right .connector {
-    width: 0;
-    transition: width 0.4s ease;
-    will-change: width;
-  }
-  
-  #roadmap .__item.__left .connector {
-    position: absolute;
-    background-color: #252525;
-    height: 2px;
-    bottom: 50%;
-  }
-  
-  #roadmap .__item.__right .connector {
-    position: absolute;
-    background-color: #252525;
-    height: 2px;
-    bottom: 50%;
-  }
-  
-  #roadmap .__item.__left .connector::before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border: 4px solid #ffd600;
-    background-color: #fff;
-    border-radius: 50%;
-    left: -12px;
-    transform: translate3d(0, -50%, 0);
-  }
-  
-  #roadmap .__item.__left .connector::after {
-    content: "";
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    border: 2px solid #ffd600;
-    background-color: #fff;
-    border-radius: 50%;
-    right: -6px;
-    z-index: 3;
-    transform: translate3d(0, -50%, 0);
-  }
-  
-  #roadmap .__item.__right .connector::before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border: 4px solid #ffd600;
-    background-color: #fff;
-    border-radius: 50%;
-    right: -12px;
-    transform: translate3d(0, -50%, 0);
-  }
-  
-  #roadmap .__item.__right .connector::after {
-    content: "";
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    border: 2px solid #ffd600;
-    background-color: #fff;
-    border-radius: 50%;
-    left: -6px;
-    z-index: 3;
-    transform: translate3d(0, -50%, 0);
-  }
-  
-  #roadmap .__goals .__the_goals {
-    display: block;
-    width: 300px;
-    margin: 100px auto 50px auto;
-    padding: 20px 0;
-    background: #ffda33;
-    text-align: center;
-    position: relative;
-    z-index: 3;
-  
-    opacity: 0;
-    transition: opacity 0.6s ease;
-  }
-  #roadmap .__goals .__the_goals:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    border-bottom: 25px solid #ffda33;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-  }
-  #roadmap .__goals .__the_goals:after {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 100%;
-    border-top: 25px solid #ffda33;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    filter: drop-shadow(0px 14px 3px rgba(0, 0, 0, 0.5));
-  }
-  #roadmap .__goals .__the_goals b {
-    display: block;
-    margin-top: 65px;
-    font-size: 1.4em;
-  }
-  #roadmap .__goals .__the_goals ul {
-    padding: 0 50px;
-    text-align: left;
-    font-size: 1.2em;
-  }
-  #roadmap .__goals .__the_goals ul li {
-    padding: 0;
-    margin: 5px 0;
-    list-style-type: disc;
-  }
-  #roadmap .__goals .__coin {
-    position: absolute;
-    width: 150px;
-    left: 50%;
-    top: -75px;
-    transform: translateX(-50%);
-    filter: drop-shadow(0px 0px 10px rgba(247, 255, 255, 0.3));
-  
-    z-index: 4;
-  
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-  
-  @media (max-width: 850px) {
-    #roadmap::before {
-      left: 0;
-      top: 50px;
-      height: calc(100% - 50px);
-    }
-  
-    #roadmap #endpoint {
-      left: 0;
-    }
-  
-    #roadmap .__year {
-      display: table;
-      margin: 0;
-    }
-  
-    #roadmap .__item {
-      display: inline-block;
-    }
-  
-    #roadmap .__item .connector {
-      width: 23px;
-      left: 3px;
-      z-index: 3;
-    }
-  
-    #roadmap .__item .text {
-      width: 75%;
-      float: right;
-      margin: 30px 0;
-    }
-  
-    #roadmap .__item.__left .text {
-      border-right: none;
-      border-left: 4px solid #ffd600;
-    }
-  
-    #roadmap .__item.__right {
-      text-align: left;
-      transform: translateX(0);
-    }
-  
-    #roadmap .__item.__left {
-      transform: translateX(0);
-    }
-  
-    #roadmap .__item.__left .connector {
-      transform: rotateY(180deg);
-    }
-  
-    #roadmap .__item.__right .connector::after {
-      left: -9px;
-    }
-  
-    #roadmap .__item.__right .connector::before {
-      right: -8px;
-    }
-  
-    #roadmap .__item.__left .connector::before {
-      left: -8px;
-    }
-  
-    #roadmap .__item.__left .connector::after {
-      right: -9px;
-    }
-    #roadmap .__goals > .__the_goals,
-    #roadmap .__goals .__coin {
-      opacity: 1;
-    }
-    #roadmap .__goals .__coin {
-      top: 20px;
-    }
-    #roadmap .__goals .__prettify {
-      position: absolute;
-      width: 100%;
-      background: #252525;
-      height: 100px;
-      top: 50%;
-    }
-  }
+  transition: all 1s;
+}
+
+.timeline_container li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  /* margin: 1.5rem; */
+  width: 200px;
+  height: 3px;
+  background: #fff;
+}
+
+.timeline_container:last-child {
+  width: 280px;
+}
+
+.timeline_container:not(:first-child) {
+  margin-left: 14px;
+}
+.timeline_container li div {
+  position: absolute;
+  left: calc(40%);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: var(--dark);
+  background: var(--white);
+}
+.timeline_container li time {
+  color: var(--teal);
+  font-weight: bold;
+}
+.timeline_container li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline_container li:nth-child(odd) div {
+  top: -1.5rem;
+  transform: translateY(-100%);
+}
+
+.timeline_container li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline_container li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline_container li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+.timeline_container li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(40% - 4px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #F45B69;
+}
+.timeline_container time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
   .how-to-buy {
     background-image: url(img/how-to-bg.jpg);
     background-repeat: no-repeat;
@@ -718,7 +487,7 @@ background-color: #f3f2fc;
     width: 70%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     padding-bottom: 5rem;
   }
@@ -730,16 +499,155 @@ background-color: #f3f2fc;
     text-align: center;
     font-size: 3rem;
   }
+  .how-to-buy .text-container {
+    counter-reset: digits;
+
+  }
   .how-to-buy .numeral-text-style {
     margin-top: 1.5rem;
     color: var(--white);
     font-size: 1.1rem;
-    line-height: 1.4;
+    line-height: 1.5;
     font-weight: 900;
+    position: relative;
+  }
+  .how-to-buy .numeral-text-style::before{
+    position: absolute;
+    left: -3.1rem;
+    top: -0.4rem;
+    counter-increment: digits;
+    content: counter(digits);
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 100%;
+    border: 2px solid white;
   }
   .how-to-buy img {
     width: 30rem;
     border-radius: 10px;
+    /* padding-bottom: 3rem; */
+  }
+  .contact-form {
+    background-color: var(--indigo);
+  }
+  .contact-form .section-title-style {
+    color: var(--white);
+    font-size: 5rem;
+  }
+  .contact-form .paragraph-text-style {
+    color: var(--white);
+    text-align: center;
+    font-size: 3rem;
+  }
+  .contact-form .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .contact-form .container .address-box {
+    display: inline-block;
+    margin-top: 50px;
+  }
+  .contact-form .container .address-box .phone {
+    margin: 2rem;
+    position: relative;
+  }
+  .contact-form .container .address-box .phone::before {
+    content: " ";
+    background-image: url(./img/phone-icon.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -70px;
+    top: 10px;
+    width: 200px;
+    height: 400px;
+  }
+  .contact-form .container .address-box .mail {
+    margin: 2rem;
+    position: relative;
+  }
+  .contact-form .container .address-box .mail::before {
+    content: " ";
+    background-image: url(./img/mail-icon.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -70px;
+    top: 10px;
+    width: 200px;
+    height: 100px;
+  }
+  .contact-form .container .address-box .contact-text {
+    font-size: 1.4rem;
+    color: var(--white);
+    line-height: 1.5;
+    font-weight: 900;
+    text-decoration: none;
+  }
+  .contact-form .container .orderform-container {
+    width: 50%;
+    margin: 3rem;
+  }
+  .contact-form .container .form-one {
+    display: inline-flex;
+    justify-content: space-between;
+    /* margin: 0.5rem; */
+  }
+  .contact-form .container .form-one p {
+    margin: 0.6rem 0rem;
+  }
+  .contact-form .container .form-one input {
+    width: 15rem;
+    height: 2rem;
+    background-color: var(--white);
+    border: 2px solid var(--indigo);
+    border-radius: 0.5rem;
+  }
+  .contact-form .container .form-one input[type="email"] {
+    margin-left: 1.5rem;
+  }
+  input[placeholder] {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0.3rem;
+  }
+  textarea[placeholder] {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0.3rem;
+  }
+  input[type="submit"] {
+    max-width: 250px;
+    max-height: 100px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--dark);
+    /* text-align: center; */
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    border: none;
+    cursor:pointer;   
+  }
+  .contact-form .container .form-two p {
+    padding: 0.6rem 0rem;
+  }
+  .contact-form .container .form-two input {
+    width: 32.4rem;
+    height: 2rem;
+    background-color: var(--white);
+    border: 2px solid var(--indigo);
+    border-radius: 0.5rem;
+  }
+  .contact-form .container .form-two textarea {
+    width: 32.4rem;
+    height: 9rem;
+    background-color: var(--white);
+    border: 2px solid var(--indigo);
+    border-radius: 0.5rem;
   }
   .footer {
     background-color: var(--gray-dark);
