@@ -151,22 +151,24 @@ header {
 
 }
 .header li a {
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    padding: 0, 18px;
-    color: var(--grey-dark);
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.5rem;
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  padding: 0, 18px;
+  color: var(--grey-dark);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem;
+
+  transition-property: transform;
 }
 .header li a:hover {
     /* border-bottom: 0.4rem solid var(--indigo); */
     background-color: var(--purple);
     color: var(--white);
+    transform: scale(1.15);
     transition: 500ms;
     border-radius: 0.5rem;
-    /* transform: scale(1.25); */
-    font-size: 1.1rem;
 }
 
 .hero {
@@ -235,7 +237,7 @@ header {
   font-size: 1.1rem;
 }
 
-.hero .button {
+/* .hero .button {
   position: relative;
 
   padding: 0 2rem;
@@ -257,25 +259,34 @@ header {
 
   overflow: hidden;
   cursor: pointer;
-}
-.hero .button .ripple {
-  display: flex;
+} */
+.ripple {
+  padding: 0 2rem;
+  height: 5.6rem;
+  width: 22rem;
+  border: 0;
+  border-radius: 99rem;
+
+  display: inline-block;
   align-items: center;
   justify-content: center;
 
-  position: absolute;
+  color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--purple);
+  box-shadow: 0 1rem 2.5rem -1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
 
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  background-color: rgba(248, 69, 159, 0.2);
-
-  opacity: 0;
+  overflow: hidden;
+  cursor: pointer;
   pointer-events: none;
   transform-origin: 0% 0%;
-
+  
+  animation-name: rippleAnimation;
   animation-timing-function: infinite;
-  animation: rippleAnimation 1.25s;
+  animation-duration: 0.25s;
 }
 @keyframes rippleAnimation {
   0% {
